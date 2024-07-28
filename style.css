@@ -1,0 +1,153 @@
+@font-face {
+  font-family: nb;
+  src: url(./assets/NBInternationalProBoo.ttf);
+}
+
+@font-face {
+  font-family: rejouce;
+  src: url(./assets/Rejouice-Headline.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: nb;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* .flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+#cursor {
+  height: 7.5vw;
+  width: 7.5vw;
+  background-color: #f95213;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+
+#cursor h5 {
+  font-size: 1.25vw;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+#page1 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: rgb(246, 245, 247);
+}
+
+#page1 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+#page1-content {
+  height: 100%;
+  width: 100%;
+  /* background-color: black; */
+  color: white;
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 4rem;
+  font-size: 1rem;
+}
+
+nav h3 {
+  font-weight: 100;
+}
+
+#page1-content h1 {
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* text-align: center; */
+  font-family: rejoucie;
+  /* width: 100vw; */
+  font-size: 27vw;
+  line-height: 27vw;
+  font-weight: 100;
+}
+
+#page1-content h1 span {
+  font-family: rejouce;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: aqua;
+}
+
+#page3 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 3vw;
+}
+
+#page3-top {
+  /* background-color: rebeccapurple; */
+  text-align: center;
+}
+
+#page3-top h4 {
+  margin-bottom: 1vw;
+  font-size: 1vw;
+  font-weight: 500;
+}
+#page3-top h4 span {
+  background-color: rgba(0, 0, 0, 0.757);
+  color: white;
+  border-radius: 2rem;
+  font-size: 0.7vw;
+  padding: 0.3rem 0.4rem;
+}
+#page3-top h2 {
+  font-size: 4vw;
+  font-weight: 500;
+}
+
+#page3-elements {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6vw;
+  background-color: red;
+}
+
+#page3-elements .box {
+  height: 100%;
+  width: 32.5%;
+
+  background-color: blue;
+}
